@@ -30,8 +30,8 @@ func init() {
 }
 
 func usage() {
-	fmt.Fprintf(os.Stderr, `mini_spider version: %s
-Usage: mini_spider [-h help] [-v version] [-c config path] [-l log path]
+	fmt.Fprintf(os.Stdout, `oracle_service version: %s
+Usage: oracle_service [-h help] [-v version] [-c config path] [-l log path]
 
 Options:
 `, VERSION)
@@ -61,9 +61,11 @@ func main() {
 	flag.Parse()
 	if h {
 		flag.Usage()
+		return
 	}
 	if v {
 		fmt.Println("oracle-service version:", VERSION)
+		return
 	}
 	// init config
 	setConfig()

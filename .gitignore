@@ -3,3 +3,5 @@ build/
 ./logs/
 .idea/
 *.iml
+oracle-service
+*.log
