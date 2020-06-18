@@ -1,0 +1,227 @@
+[
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "_account",
+				"type": "address"
+			}
+		],
+		"name": "withdraw",
+		"outputs": [],
+		"payable": true,
+		"stateMutability": "payable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "queryId",
+				"type": "bytes32"
+			},
+			{
+				"name": "callbackAddr",
+				"type": "address"
+			},
+			{
+				"name": "callbackFUN",
+				"type": "string"
+			},
+			{
+				"name": "stateCode",
+				"type": "uint64"
+			},
+			{
+				"name": "respData",
+				"type": "uint256"
+			}
+		],
+		"name": "responseUint256",
+		"outputs": [
+			{
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "MIN_FEE",
+		"outputs": [
+			{
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "getOwner",
+		"outputs": [
+			{
+				"name": "",
+				"type": "address"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "queryId",
+				"type": "bytes32"
+			},
+			{
+				"name": "callbackAddr",
+				"type": "address"
+			},
+			{
+				"name": "callbackFUN",
+				"type": "string"
+			},
+			{
+				"name": "queryData",
+				"type": "bytes"
+			}
+		],
+		"name": "query",
+		"outputs": [
+			{
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"payable": true,
+		"stateMutability": "payable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "newOwner",
+				"type": "address"
+			}
+		],
+		"name": "changeOwner",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "queryId",
+				"type": "bytes32"
+			},
+			{
+				"name": "callbackAddr",
+				"type": "address"
+			},
+			{
+				"name": "callbackFUN",
+				"type": "string"
+			},
+			{
+				"name": "stateCode",
+				"type": "uint64"
+			},
+			{
+				"name": "respData",
+				"type": "bytes"
+			}
+		],
+		"name": "responseBytes",
+		"outputs": [
+			{
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "minFee",
+				"type": "uint256"
+			}
+		],
+		"name": "setRequestFee",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": false,
+				"name": "queryId",
+				"type": "bytes32"
+			},
+			{
+				"indexed": false,
+				"name": "requester",
+				"type": "address"
+			},
+			{
+				"indexed": false,
+				"name": "fee",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"name": "callbackAddr",
+				"type": "address"
+			},
+			{
+				"indexed": false,
+				"name": "callbackFUN",
+				"type": "string"
+			},
+			{
+				"indexed": false,
+				"name": "queryData",
+				"type": "bytes"
+			}
+		],
+		"name": "QueryInfo",
+		"type": "event"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": true,
+				"name": "oldOwner",
+				"type": "address"
+			},
+			{
+				"indexed": true,
+				"name": "newOwner",
+				"type": "address"
+			}
+		],
+		"name": "OwnerSet",
+		"type": "event"
+	}
+]
