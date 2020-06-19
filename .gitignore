@@ -1,6 +1,6 @@
 build/
 .DS_Store
-./logs/
+./logs/*
 .idea/
 *.iml
 oracle-service

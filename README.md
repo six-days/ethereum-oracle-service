@@ -1,5 +1,7 @@
 # ethereum-oracle-service
-ethereum oracle service
+以太坊Oracle后端服务
+
+[《撸一个预言机（Oracle）服务，真香！》系列文章](https://www.jianshu.com/c/4b0a4137dcb8)
 
 ## 1、编译
 ```
